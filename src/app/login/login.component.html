@@ -1,0 +1,9 @@
+<p *ngIf="displayError" style="color:red">{{errorMessage}}</p>
+<form (ngSubmit)="checkLogin()">
+    <p>User Name</p>
+    <input type="text" name="userName" [(ngModel)]="userName"/>
+    <p>Password</p>
+    <input type="text" name="password" [(ngModel)]="password"/>
+
+    <input type="submit"/>
+</form>
